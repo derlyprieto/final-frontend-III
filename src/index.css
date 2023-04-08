@@ -11,9 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+Button{
+  background-color: rgba(136, 136, 136, 0.116);
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  width: 100px;
+  cursor: pointer;
+}
+
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
+  margin: 10px;
   border: none;
   width: 100%;
   cursor: pointer;
@@ -23,10 +34,19 @@ h1{
   text-align: center;
 }
 
+img {
+  width: 100%;
+}
+
+.imgsup {
+  width: 250px;
+}
+
 nav{
+  background-color: rgb(241, 234, 241);
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  width: 100%;
+  justify-content: space-evenly;
   padding: 1rem;
 }
 
@@ -36,6 +56,7 @@ a{
   margin: 5px;
   cursor: pointer;
 }
+
 a:hover{
   color: rgb(136, 136, 136);
 } 
@@ -71,6 +92,7 @@ form{
 }
 
 .card{
+  font-size: 10px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -113,10 +135,35 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+.light{
+  background-color: white;
+  color: #121212;
+}
+
+.light > button {
+  color: #121212;
+}
+
+
 .dark{
-  background-color: #12121296;
+  background-color: #121212;
   color: white;
 }
+
 .dark > a {
+  color: white;
+}
+
+.dark > .card > a {
+  color: white;
+}
+
+.dark > button {
+  background-color: #585757;
+  color: white;
+}
+
+.dark > .card > button {
+  background-color: #585757;
   color: white;
 }
